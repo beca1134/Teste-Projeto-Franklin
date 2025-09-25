@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Franklin - Mulheres que Fizeram História</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #333;
+      scroll-behavior: smooth; /* animação suave ao rolar */
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* Cabeçalho */
+    header {
+      background: #2a0e37;
+      color: #fff;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header .logo {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    header .logo img {
+      max-width: 180px;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #e4c87f;
+    }
+
+    /* Banner */
+    .banner {
+      background: linear-gradient(rgba(46, 23, 68, 0.8), rgba(46, 23, 68, 0.8)), url('assets/bg.jpg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .banner h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .banner p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* Seções */
+    main {
+      padding: 40px 0;
+    }
+
+    main h2 {
+      color: #2e1744;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* Sobre o Projeto */
+    .sobre {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .sobre-texto {
+      flex: 1 1 55%;
+    }
+
+    .sobre-imagem {
+      flex: 1 1 40%;
+      text-align: center;
+    }
+
+    .sobre-imagem img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .sobre p {
+      margin-bottom: 15px;
+    }
+
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Contato */
+    .contato {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    /* Rodapé */
+    footer {
+      background: #2e1744;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">
+      <img src="logocerta.png">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#jogo">O Jogo</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section id="inicio" class="banner">
+    <div class="container">
+      <h2>Mulheres que fizeram história</h2>
+      <p>
+        Franklin é um projeto criado por alunos do SENAC de São José do Rio Preto,
+        inspirado na cientista Rosalind Franklin. O objetivo é dar mais reconhecimento
+        às mulheres que marcaram a história, por meio de um jogo educativo e divertido.
+      </p>
+    </div>
+  </section>
+
+  <!-- Conteúdo -->
+  <main class="container">
+    <section id="sobre" class="sobre">
+      <div class="sobre-texto">
+        <h2>Sobre o Projeto</h2>
+        <p>
+          O Projeto Franklin nasceu da vontade de valorizar e dar visibilidade a mulheres
+          que tiveram papéis fundamentais na ciência, cultura, política e em outras áreas,
+          mas que muitas vezes não receberam o devido reconhecimento.
+        </p>
+        <p>
+          Inspirados em Rosalind Franklin, cientista que teve papel essencial na descoberta
+          da estrutura do DNA, buscamos criar uma experiência educativa e acessível para
+          que mais pessoas possam conhecer e se inspirar nessas histórias.
+        </p>
+      </div>
+      <div class="sobre-imagem">
+        <img src="Rosalind_Franklin.jpg" alt="franklin">
+      </div>
+    </section>
+
+    <section id="jogo" class="projetos">
+      <h2>O Jogo Franklin</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Como funciona</h3>
+          <p>
+            O Franklin é um jogo manual de cartas, inspirado no jogo Perfil.
+            Cada carta traz dicas sobre uma mulher que fez história.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Objetivo</h3>
+          <p>
+            O desafio é adivinhar quem é a mulher histórica a partir das pistas.
+            Assim, o jogador aprende de forma divertida e educativa.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Impacto</h3>
+          <p>
+            Nosso objetivo é que cada vez mais pessoas reconheçam e conheçam
+            novas figuras femininas que transformaram o mundo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <h2>Contato</h2>
+      <p>Entre em contato pelo e-mail: <strong>franklin@senac.edu</strong></p>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>
+      Projeto Franklin — desenvolvido por alunos do SENAC de São José do Rio Preto · 2025
+    </p>
+  </footer>
+</body>
+</html>
